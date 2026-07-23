@@ -28,12 +28,18 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/america-first-credit-union-domain-security.yml
 - type: Website
   url: https://www.americafirst.com
 - type: PrivacyPolicy
   url: https://www.americafirst.com/privacy
 - type: Security
   url: https://www.americafirst.com/security
+- type: TermsOfService
+  url: https://www.americafirst.com/about/help/legal-disclosures-and-documents.html
+- type: Support
+  url: https://www.americafirst.com/about/help/support.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
