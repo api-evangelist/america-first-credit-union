@@ -1,0 +1,39 @@
+aid: america-first-credit-union
+url: https://raw.githubusercontent.com/api-evangelist/america-first-credit-union/refs/heads/main/apis.yml
+name: America First Credit Union
+kind: company
+description: America First Credit Union is a federally chartered, NCUA-insured credit
+  union headquartered in Riverdale, Utah, founded in 1939. With roughly $19 billion
+  in assets, more than one million members, and about 124 branches across seven western
+  states (Utah, Idaho, Oregon, New Mexico, Arizona, Nevada, and California), it is
+  one of the largest credit unions in the United States. Like the vast majority of
+  US credit unions, America First operates no public first-party developer portal
+  and publishes no downloadable OpenAPI/Swagger specifications. It provides no
+  self-serve, publicly documented API surface; consumer-permissioned account data
+  access is handled through third-party data aggregators and its core banking
+  provider rather than a direct first-party API. No public FDX participation or CFPB
+  Section 1033 data-access posture is documented on its public website as of this
+  bootstrap. This record is an honest identity profile with no fabricated API surface.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Credit Union
+- Consumer Banking
+- Open Finance
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.americafirst.com
+- type: PrivacyPolicy
+  url: https://www.americafirst.com/privacy
+- type: Security
+  url: https://www.americafirst.com/security
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

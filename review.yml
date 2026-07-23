@@ -1,0 +1,74 @@
+aid: america-first-credit-union
+name: America First Credit Union
+review:
+  question: Does America First Credit Union expose a public first-party developer API or downloadable OpenAPI specification?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    America First Credit Union publishes no public first-party developer portal and
+    no downloadable OpenAPI/Swagger specifications. Candidate developer hosts were
+    probed and none resolve to a developer portal: developer.americafirst.com,
+    developers.americafirst.com, and api.americafirst.com all fail to connect
+    (no DNS/host), and americafirst.com/developers soft-redirects to the marketing
+    homepage rather than serving developer documentation. This is the expected and
+    honest posture for a US credit union of this size: no public API surface,
+    no OpenAPI, no API reference, no authentication model to document. Consumer-
+    permissioned financial data access is mediated through third-party data
+    aggregators and the credit union's core banking provider rather than a direct,
+    publicly documented first-party API. No FDX (Financial Data Exchange)
+    participation and no CFPB Section 1033 personal-financial-data-rights posture
+    is published on the institution's public website as of the review date. US
+    open finance is voluntary and fragmented; for this institution the reality is
+    aggregator-mediated access only, with no first-party API to profile.
+  developerPortal:
+    confirmed: false
+    url: ""
+    note: No developer portal exists; developer/api subdomains do not resolve and /developers redirects to the homepage.
+  openapiHarvested: false
+  fdxParticipation:
+    documented: false
+    note: No public FDX participation statement found on americafirst.com.
+  cfpb1033Posture:
+    documented: false
+    note: No published CFPB Section 1033 data-access / personal financial data rights posture found.
+  dataAccessModel: aggregator-mediated
+  authModel: none-documented
+  specProvenance: none
+  probes:
+  - url: https://developer.americafirst.com
+    status: 000
+    note: Host does not resolve / no connection.
+  - url: https://developers.americafirst.com
+    status: 000
+    note: Host does not resolve / no connection.
+  - url: https://api.americafirst.com
+    status: 000
+    note: Host does not resolve / no connection.
+  - url: https://americafirst.com/developers
+    status: 200
+    note: Soft redirect to marketing homepage; not a developer portal.
+  - url: https://www.americafirst.com
+    status: 200
+    note: Marketing homepage; consumer and business banking only, no developer resources.
+  - url: https://www.americafirst.com/privacy
+    status: 200
+    note: Privacy policy (PDF); no public API.
+  - url: https://www.americafirst.com/security
+    status: 200
+    note: Security information page; no public API.
+  transports:
+  - protocol: REST
+    documented: false
+    note: No public REST API is documented.
+  - protocol: FDX
+    documented: false
+    note: No FDX-conformant data-access API documented publicly.
+sources:
+- url: https://www.americafirst.com
+  type: Website
+  note: Institution marketing homepage; Utah-based credit union, no developer or API pages.
+- url: https://en.wikipedia.org/wiki/America_First_Credit_Union
+  type: Reference
+  note: Institution facts - founded 1939, Riverdale UT HQ, ~$19.35B assets, 1M+ members, 124 branches, NCUA-insured.
