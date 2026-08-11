@@ -28,6 +28,10 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: Blog
+  url: https://www.americafirst.com/content/afcu/us/en/about/news
+- type: TrustCenter
+  url: https://www.americafirst.com/trust
 - type: DomainSecurity
   url: security/america-first-credit-union-domain-security.yml
 - type: Website
