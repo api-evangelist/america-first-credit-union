@@ -14,6 +14,17 @@ description: America First Credit Union is a federally chartered, NCUA-insured c
   provider rather than a direct first-party API. No public FDX participation or CFPB
   Section 1033 data-access posture is documented on its public website as of this
   bootstrap. This record is an honest identity profile with no fabricated API surface.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-11'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial Services
